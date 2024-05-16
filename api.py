@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, jsonify  # Import jsonify
 import numpy as np
 import pandas as pd
 import pickle
+from fuzzywuzzy import process
 
 app = Flask(__name__)
 
@@ -81,7 +82,10 @@ def get_predicted_value(patient_symptoms):
         input_vector[symptoms_dict[item]] = 1
     return diseases_list[svc.predict([input_vector])[0]]
 
-
+def find_similar_symptom(user_symptom):
+    matches = process.extract(user_symptom, symptoms_dict.keys(), limit=3)
+    similar_symptoms = [match[0] for match in matches if match[1] >= 80]  # Adjust similarity threshold as needed
+    return similar_symptoms
 
 @app.route('/predict', methods=['GET', 'POST'])
 def home():
@@ -96,28 +100,25 @@ def home():
             return jsonify({'message': message})
         else:
 
-
             user_symptoms = [s.strip() for s in symptoms.split(',')]
-
             user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
-            predicted_disease = get_predicted_value(user_symptoms)
+
+            # Check if symptoms match, if not find similar
+            corrected_symptoms = []
+            for symptom in user_symptoms:
+                if symptom not in symptoms_dict:
+                    similar_symptoms = find_similar_symptom(symptom)
+                    if similar_symptoms:
+                        corrected_symptoms.extend(similar_symptoms)
+                    else:
+                        corrected_symptoms.append(symptom)
+                else:
+                    corrected_symptoms.append(symptom)
+
+            predicted_disease = get_predicted_value(corrected_symptoms)
             dis_des, precautions, medications, rec_diet, workout = helper(predicted_disease)
 
-            my_precautions = []
-            for i in precautions[0]:
-                my_precautions.append(i)
 
-        
-        
-        print("predicted_disease",predicted_disease)
-        print("dis_des",dis_des)
-        print("my_precautions",my_precautions)
-        print("medications",medications)
-        print("rec_diet",rec_diet)
-        print("workout",workout)
-
-
-    # Format the workout
         workout_list = list(workout)
         precautions_array = np.array(precautions)
         precautions_list = precautions_array.tolist()
