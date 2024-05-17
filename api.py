@@ -3,8 +3,11 @@ import numpy as np
 import pandas as pd
 import pickle
 from fuzzywuzzy import process
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] ='Content-Type'
 
 sym_des = pd.read_csv("datasets/symtoms_df.csv")
 precautions = pd.read_csv("datasets/precautions_df.csv")
@@ -91,6 +94,7 @@ def find_similar_symptom(user_symptom):
     return similar_symptoms
 
 @app.route('/predict', methods=['GET', 'POST'])
+@cross_origin()
 def home():
     print("Hello, world!")
     if request.method == 'POST':
