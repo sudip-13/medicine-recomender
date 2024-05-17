@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Dr. John Smith",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Allergist"
+    },
+    {
+        "name": "Dr. Emily Brown",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Cardiologist"
+    },
+    {
+        "name": "Dr. Sarah Johnson",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Dermatologist"
+    },
+    {
+        "name": "Dr. Michael Williams",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Endocrinologist"
+    },
+    {
+        "name": "Dr. Elizabeth Davis",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Gastroenterologist"
+    },
+    {
+        "name": "Dr. Laura Miller",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Gynecologist"
+    },
+    {
+        "name": "Dr. James Anderson",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Hepatologist"
+    },
+    {
+        "name": "Dr. David Wilson",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Internal Medicine"
+    },
+    {
+        "name": "Dr. Emma Taylor",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Neurologist"
+    },
+    {
+        "name": "Dr. Linda Martinez",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Osteopathic"
+    },
+    {
+        "name": "Dr. Richard Thomas",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Otolaryngologist"
+    },
+    {
+        "name": "Dr. Susan Garcia",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Pediatrician"
+    },
+    {
+        "name": "Dr. Mark Lee",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Phlebologist"
+    },
+    {
+        "name": "Dr. Patricia Moore",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Pulmonologist"
+    },
+    {
+        "name": "Dr. Steven Martinez",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Rheumatologist"
+    },
+    {
+        "name": "Dr. Karen Jackson",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwfJ-sfBI_mfosIiy1R3wpv6vVQp25hGPIPsjYP93Og&s",
+        "specialization": "Tuberculosis Specialist"
+    }
+]
